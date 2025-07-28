@@ -1,0 +1,218 @@
+/* Reset y base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Header */
+header {
+    background-color: #000;
+    color: white;
+    padding: 1rem 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar nav a {
+    color: white;
+    margin-left: 1rem;
+    text-decoration: none;
+}
+
+.navbar nav a:hover {
+    text-decoration: underline;
+}
+
+/* Producto */
+.producto {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem 0;
+    background: white;
+    margin-top: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.imagen img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+.detalles {
+    flex: 1;
+}
+
+.detalles h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.detalles p {
+    margin-bottom: 1rem;
+}
+
+.detalles button {
+    padding: 0.7rem 1.2rem;
+    font-size: 1rem;
+    background-color: #007aff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.detalles button:hover {
+    background-color: #005fcc;
+}
+
+/* Tabla */
+.tabla-especificaciones {
+    width: 100%;
+    max-width: 600px;
+    margin: 1.5rem auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.tabla-especificaciones td {
+    padding: 0.6rem 1rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.tabla-especificaciones tr:last-child td {
+    border-bottom: none;
+}
+
+.tabla-especificaciones td:first-child {
+    font-weight: bold;
+    color: #444;
+    width: 40%;
+}
+
+.tabla-especificaciones td:last-child {
+    width: 60%;
+}
+
+
+/* Sección contacto */
+.contacto {
+    background-color: #ffffff;
+    padding: 2rem;
+    margin-top: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.contacto h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.contacto ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 1rem 0;
+}
+
+.contacto ul li {
+    margin-bottom: 0.5rem;
+}
+
+.redes a img {
+    width: 32px;
+    margin-right: 10px;
+}
+
+/* Footer */
+.footer {
+    background-color: #111;
+    color: #eee;
+    padding: 2rem 0 1rem;
+    margin-top: 2rem;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+.footer-col h4 {
+    margin-bottom: 1rem;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-col ul li a {
+    color: #eee;
+    text-decoration: none;
+}
+
+.footer-col ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #444;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .producto {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar nav a {
+        margin: 0.5rem 0;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .imagen img {
+        margin: auto;
+    }
+}
